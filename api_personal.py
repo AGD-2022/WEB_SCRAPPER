@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 r = requests.get('https://www.dailysmarty.com/topics/python')
 
-print(r)
+print(r.text)
 
 datos = BeautifulSoup(r.text, 'html.parser')
 
